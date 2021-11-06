@@ -15,7 +15,7 @@ namespace VectorСalculator.Tests
         public void VerboseTest()
         {
             var vector = new Vector(10, 23);
-            Assert.AreEqual("10 23", vector.Verbose());
+            Assert.AreEqual("10 ; 23", vector.Verbose());
         }
         //сложение двух векторов
         [TestMethod()]
@@ -24,7 +24,7 @@ namespace VectorСalculator.Tests
             var a = new Vector(0, 6);
             var b = new Vector(4, 13);
             var c = Vector.Addition(a, b);
-            Assert.AreEqual("4 19", c.Verbose());
+            Assert.AreEqual("4 ; 19", c.Verbose());
         }
 
         //вычитание двух векторов
@@ -34,7 +34,7 @@ namespace VectorСalculator.Tests
             var a = new Vector(32, 8);
             var b = new Vector(17, 9);
             var c = Vector.Subtraction(a, b);
-            Assert.AreEqual("15 -1", c.Verbose());
+            Assert.AreEqual("15 ; -1", c.Verbose());
         }
 
         //вычисление скалярного произведения двух векторов

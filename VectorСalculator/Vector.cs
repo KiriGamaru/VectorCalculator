@@ -21,7 +21,7 @@ namespace VectorСalculator
         // выводит координаты вектора в виде (5 4, 1 0, 3 3 и т.д.)
         public string Verbose()
         {
-            return String.Format("{0} {1}", this.x, this.y);
+            return String.Format("{0} ; {1}", this.x, this.y);
         }
 
         //сложение двух векторов
