@@ -25,7 +25,7 @@ namespace VectorСalculator
         }
 
         //сложение двух векторов
-        public static Vector operator +(Vector a, Vector b)
+        public static Vector Addition (Vector a, Vector b)
         {
             var c = new Vector(0, 0);
             c.x = a.x + b.x;
@@ -34,7 +34,7 @@ namespace VectorСalculator
         }
 
         //вычитание двух векторов
-        public static Vector operator -(Vector a, Vector b)
+        public static Vector Subtraction (Vector a, Vector b)
         {
             var c = new Vector(0, 0);
             c.x = a.x - b.x;
@@ -57,10 +57,10 @@ namespace VectorСalculator
         //вычисление векторного произведения двух векторов
         public static double CrossProduct(Vector a, Vector b)
         {
-            var Cos = Vector.Skal(a, b) / (Vector.Length(a) * Vector.Length(a));
+            var Cos = Vector.Skal(a, b) / (Vector.Length(a) * Vector.Length(b));
             var Sin = Math.Sqrt(1 - Math.Pow(Cos, 2));
             var c = Vector.Length(a) * Vector.Length(b) * Sin;
-            return c;
+            return (float)c;
         }
 
     }
