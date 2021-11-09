@@ -59,8 +59,7 @@ namespace VectorСalculator
         {
             var Cos = Vector.Skal(a, b) / (Vector.Length(a) * Vector.Length(b));
             var Sin = Math.Sqrt(1 - Math.Pow(Cos, 2));
-            var c = Vector.Length(a) * Vector.Length(b) * Sin;
-            return (float)c;
+            return (float)Vector.Length(a) * Vector.Length(b) * Sin; ;
         }
 
     }
